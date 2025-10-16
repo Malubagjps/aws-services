@@ -1,0 +1,104 @@
+# ---------------------------------------------
+# Java & Spring Boot GitIgnore
+# ---------------------------------------------
+
+# === Build ===
+target/
+build/
+out/
+!**/src/main/**/target/
+!**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# === Maven ===
+.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# === Gradle ===
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# === IDEs ===
+## STS / Eclipse
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+## IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+## NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+## VS Code
+.vscode/
+
+# === OS Specific ===
+.DS_Store
+Thumbs.db
+
+# === Logs ===
+logs/
+*.log
+*.log.*
+
+# === Compiled Classes ===
+*.class
+
+# === Packages ===
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# === Database Files ===
+*.db
+*.mv.db
+*.trace.db
+
+# === Environment & Config ===
+.env
+.env.*
+!application.properties  # <== explicitly include this file
+application-*.yml
+application-*.yaml
+application-*.properties
+!application.properties   # <== ensure it's still included even with above rules
+
+# === AWS Credentials (Sensitive) ===
+aws.credentials
+.aws/
+.aws/credentials
+
+# === Misc ===
+HELP.md
+
+# === Local Custom Dev Files ===
+*.tmp
+*.bak
+*.swp
+*.swo
