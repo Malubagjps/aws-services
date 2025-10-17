@@ -21,10 +21,10 @@ public class OpenApiConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Spring Security Amazon Textract")
+                        .title("Spring Security Amazon Services")
                         .version("1.0")
                         .description("""
-                                API Documentation for Amazon Textract
+                                API Documentation for Amazon Textract and Amazon Rekognition
                                 
                                 **Developers**
                                 - Jhon Paul Malubag
